@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: beige;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    
+        body {
+        min-width: 320px;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: black;
+        background-color: white;
+        margin: 40px;
+        padding-left: 10px;
+        }
+       
+    
+
+        h1 {
+            color: black;
+            font-size: 5em;
+            font-weight: 600;
+            margin-bottom: 1rem;
+
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .header-container {
+            text-align: centre;
+            flex-direction: column;
+            display: flex;
+        }
+
+        ul li {
+
+            display: inline-block;
+
+        }
+
+      
+        
+
+        a {
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: whitesmoke;
+        }
+/* this is for the function to call a user */
+        .user {
+            font-style: normal;
+            color: black;
+            margin: 0 auto;
+            border: 1pl;
+            background-color: blue;
+        }
+        
+        @media (min-width: 600px) {
+        .header-container {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class = "container header-container">
+            
+            <h1>Class 1 Lab</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+
+            </nav>
+            
+            </div>
+        
+    </header>
+
+    <main>
+        <!-- use of javascript functions -->
+        <h2>Getting to know a user - 4 questions</h2>
+<Section>
+
+    <ol>
+        <li>
+        <h3> <p style="color: red ;padding:10px;"> Favourite sport? </p> </h3>
+        </li> 
+        <li>
+        <h3><p style="color: blue;padding: 10px;"> Favourite Pet?  </p></h3>
+        </li>
+        <li>
+        <h3><p style="color: green;padding: 10px;"> Favourite Music?  </p></h3>
+        </li>
+        <li>
+        <h3><p style="color: green;padding: 10px;"> Favourite holiday destination?  </p></h3>
+        </li>
+    </ol>  
+    
+      
+        
+        
+</Section>
+      
+    
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+//declaring variable
+
+let user;
+let userSport;
+let mySport;
+
+
+alert( "Hello");
+
+function userName() {
+let user = prompt("what is your name ?");
+alert("Welcome to my site "+ user);
+console.log(user);
+
+}
+
+userName();
+
+function favouriteSport() {
+    let userSport = prompt("What is your favourite sport") .toLowerCase();
+   
+    console.log(userSport);
+
+    if (userSport === "criket") {
+        mySport = "football";
+       
+    } else if (userSport === "football"){
+        mySport = "basketball"
+    } else {
+        mySport = "rugby";
+    }
+   alert(userSport + "!  excellent, mine is " + mySport )
+
+}
+
+favouriteSport();
+
+// Pet
+
+let myPet;
+let userPet
+
+function favouritePet() {
+    let userPet = prompt("What is your favourite pet") .toLowerCase();
+   
+    console.log(userPet);
+
+    if (userPet === "cat") {
+        myPet = "dog";
+       
+    } else if (userPet === "parrot"){
+        myPet = "minah"
+    } else {
+        myPet = "gold fish";
+    }
+   alert(userPet + "!  excellent, mine is " + myPet )
+
+}
+
+favouritePet();
+
+// music
+
+let myMusic;
+let userMusic;
+
+function favouriteMusic() {
+    let userMusic = prompt("What is your favourite Music") .toLowerCase();
+   
+    console.log(userMusic);
+
+    if (userMusic === "pop") {
+        myMusic = "classical";
+       
+    } else if (userMusic === "jazz"){
+        myMusic = "rock"
+    } else {
+        myMusic = "rap";
+    }
+   alert(userMusic + "!  excellent, mine is " + myMusic )
+
+
+}
+
+favouriteMusic();
+
+//holiday destination
+
+let myHolidayDestination;
+let userHolidayDestination;
+
+function favouriteHolidayDestination() {
+    let userHolidayDestination = prompt("What is your favourite holiday destination") .toLowerCase();
+   
+    console.log(userHolidayDestination);
+
+    if (userHolidayDestination === "Thailand") {
+        myHolidayDestination = "Barbedos";
+       
+    } else if (userHolidayDestination === "Barbedos"){
+        myHolidayDestination = "USA"
+    } else {
+        myHolidayDestination = "Sri Lanka";
+    }
+   alert(userHolidayDestination + "!  excellent, mine is " + myHolidayDestination );
+   alert("Sri Lanka is one of the best to have a holiday");
+
+}
+
+favouriteHolidayDestination();
+
+
+
+
+    </script>
+
+</body>
+</html>
